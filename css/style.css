@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color:#878787;
+}
+header{
+	background-color: #000000;
+	padding: 20px 0;
+	width: 100%;
+	z-index: 999999;
+	background-size: cover;
+}
+
+header img{
+	padding: 2px 0;
+	background-size: auto;
+}
+
+header p{
+	font-size: 40px;
+	color: aliceblue;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+
+#inicio{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #FFFFFF;
+	padding: 10% 0;
+	text-align: center;
+}
+
+#sobremi{
+	background-image:url("../img/fondoazul1-01.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 300px 60px;
+}
+
+#sobremi h2{
+	font-size: 70px;
+	color: #214251;
+	width: 60%;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+#sobremi p{
+	width: 40%;
+	margin-bottom: 50px;
+	font-size: 20px;
+	color: #2A2A2A;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+.titulo{
+	font-size: 45px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	color: #000;
+}
+
+
+#portafolio{
+	background-image:url("../img/fondoazul-01.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 10% 0;
+	text-align: center;
+	
+	
+}
+
+.titulo{
+	color: #214251;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+.subtitulo{
+	font-size: 18px;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+#portafolio h4{
+	font-size: 20px;
+	color: #214251;
+	font-weight: 600;
+	margin-bottom: 20px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+#contacto{
+	background-image: url("../img/fondoultimo-01.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 50px 100px 600px 100px;
+		
+}
+
+.circulo{
+	width: 100px;
+	height:100px;
+	border-radius: 100%;
+	line-height: 100px;
+	/*border: 1px solid #ddd;*/
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 15px 0px #ddd;
+	font-size: 40px;
+	color: #214251;
+}
+
+.circulo:hover{
+	box-shadow: 0px 0px 5px 0px #ddd;
+}
+
+#diseno{
+	background-image:url("../img/fondoazul-01.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 10% 0;
+	text-align: center;
+	
+}
+.work{
+	position: relative;
+}
+
+.about-relative{
+	position: relative;
+}
+.about-info{
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
+	color: #fff;
+	display: grid;
+	justify-content: center;
+	margin: 20px;
+}
+.about-relative img{
+	width: 250px;
+	height: 300px;
+}
+#fotografia{
+	background-image:url("../img/fondoazul-01.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #FFFFFF;
+	padding: 10% 0;
+	text-align: center;
+}
+
+#fotografia titulo{
+	color: #214251;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	text-align: center;
+}
+.about-info h3{
+	color: #fff;
+}
+.work-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	background-color: #FFFFFF;
+	opacity: 0;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+	}
+
+.work:hover .work-bg{
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+}
+
+.work-info h4{
+	color: #000000;
+	transform: translate3d(0px,20px,0);
+}
+.work-info p{
+	font-size: 12px;
+	transform: translate3d(0px,-20px,0);
+}
+
+.work:hover .work-info h4{
+	transform: translate3d(0px,0px,0);
+	transition: all 0.5s ease-in-out;
+}
+.work:hover .work-info p{
+	transform: translate3d(0px,0px,0);
+	transition: all 0.5s ease-in-out;
+}
+
+.work-frame{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	padding: 10px;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.work-frame-info{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	
+}
+
+.work:hover .work-frame{
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+
+.capa-relative{
+	position: relative;
+	overflow: hidden;
+}
+
+.capa-cintillo{
+	position: absolute;
+	width: 100%;
+	padding: 10px 0;
+	bottom: 0;
+	color:#fff;
+	text-align: center;
+	font-size: 16px;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	z-index: 50;
+}
+
+.capa-overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(255,255,255,0.75) ;
+}
+.capa-relative img{
+	filter: grayscale(1);
+	transition: all 0.5s ease-in-out;
+}
+
+.capa-relative:hover img{
+	filter: grayscale(0);
+	transform: scale(1.5);
+	transition: all 0.5s ease-in-out;
+}
+
+.capa-cintillo h4{
+	font-size: 16px;
+}
+
+
+footer{
+	background-color: #121212;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 13px;
+}
+
+footer h1{
+	font-size: 40px;
+	color: aliceblue;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+
+footer ul{
+	text-align: center;
+}
+
+footer ul li{
+	padding-right: 15px;
+}
+
+footer ul li a{
+	color: #fff;
+	font-size: 16px;
+}
